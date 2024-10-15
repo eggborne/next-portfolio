@@ -1,4 +1,3 @@
-
 @import 'normalize.css';
 
 :root {
@@ -6,7 +5,8 @@
   --main-width: 100vw;
   --actual-view-height: 100vh;
   --actual-view-height: 100dvh;
-  --header-height: 4rem;
+  --header-height: 3.5rem;
+  --hamburger-size: calc(var(--header-height) * 0.65);
   --footer-height: 2rem;
   --main-padding: 1rem;
   /* colors */
@@ -14,6 +14,9 @@
   --main-font-color: #aaa;
   --header-bg-color: #555;
   --header-font-color: #ddd;
+  --link-color: rgb(96, 211, 134);
+
+  --animation-speed: 250ms;
 }
 
 html,
@@ -24,10 +27,21 @@ body {
 
 body {
   color: var(--main-font-color);
-  background: var(--main-bg-color);
+  background: #000000;
   font-family: var(--font-geist-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: var(--actual-view-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+main {
+  background-color: var(--main-bg-color);
+  flex-grow: 1;
+  padding: var(--main-padding);
 }
 
 * {
@@ -37,6 +51,46 @@ body {
 }
 
 a {
-  color: rgb(70, 214, 121);
+  color: var(--link-color);
   text-decoration: none;
+}
+
+header,
+footer {
+  /* position: absolute; */
+  left: 0;
+  width: 100%;
+  background-color: var(--header-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--header-font-color);
+  padding: var(--main-padding);
+  padding-right: calc((var(--header-height) - var(--hamburger-size)) / 2);
+  overflow: hidden;
+  z-index: 1;
+}
+
+header {
+  /* top: 0; */
+  height: var(--header-height);
+  font-size: calc(var(--header-height) * 0.3);
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+header>a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header>a>h1 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+footer {
+  /* bottom: 0; */
+  height: var(--footer-height);
+  font-size: 0.8rem;
 }

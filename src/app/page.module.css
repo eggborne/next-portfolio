@@ -1,37 +1,6 @@
-.page {
+.home {
   color: var(--main-font-color);
   font-family: var(--font-geist-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.header,
-.footer {
-  width: 100%;
-  background-color: var(--header-bg-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--header-font-color);
-  padding: 0 var(--main-padding);
-}
-
-.header {
-  height: var(--header-height);
-  font-size: calc(var(--header-height) * 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.footer {
-  height: var(--footer-height);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 0.8rem;
-}
-
-.main {
-  background-color: var(--main-bg-color);
 }

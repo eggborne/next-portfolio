@@ -1,0 +1,29 @@
+[
+  {
+    "id": "buggle",
+    "title": "Buggle",
+    "description": "Multiplayer grid-based word game",
+    "technologies": [
+      "Vite",
+      "React",
+      "TypeScript"
+    ],
+    "images": {
+      "icon": "https://buggle.live/blargh.png",
+      "screenshots": {
+        "desktop": [],
+        "mobile": []
+      }
+    },
+    "liveUrl": "https://buggle.live",
+    "features": [
+      "Responsive design",
+      "Another feature",
+      "Yet another feature"
+    ],
+    "challenges": [
+      "Put a challenge here, a challenge here, a challenge here a challenge here a challenge here.",
+      "Put another challenge here a challenge herea challenge here a challenge here, a challenge herea challenge here."
+    ]    
+  }
+]
