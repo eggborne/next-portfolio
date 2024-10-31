@@ -1,18 +1,32 @@
 [
   {
     "id": "buggle",
-    "title": "Buggle",
+    "title": "Buggle.live",
     "description": "Multiplayer grid-based word game",
-    "technologies": [
-      "Vite",
-      "React",
-      "TypeScript"
-    ],
+    "tech": {
+      "frontEnd": [
+       "Vite",
+       "React",
+       "TypeScript",
+       "Three.js"
+      ],
+      "backEnd": [
+        "Node.js",
+        "Firebase",
+        "OpenAI API"
+      ],
+      "deployment": [
+        "Apache (shared hosting)"
+      ]
+    },
     "images": {
-      "icon": "https://buggle.live/blargh.png",
+      "icon": "https://buggle.live/favicon.ico",
       "screenshots": {
         "desktop": [],
-        "mobile": []
+        "mobile": [
+          "buggle_mobile_0.png",
+          "buggle_mobile_1.png"
+        ]
       }
     },
     "liveUrl": "https://buggle.live",
@@ -25,5 +39,80 @@
       "Put a challenge here, a challenge here, a challenge here a challenge here a challenge here.",
       "Put another challenge here a challenge herea challenge here a challenge here, a challenge herea challenge here."
     ]    
+  },
+  {
+    "id": "css-kaboom",
+    "title": "CSS Kaboom!",
+    "description": "Classic Atari game remade with CSS",
+    "tech": {
+      "frontEnd": [
+       "No frameworks or libraries used!"
+      ],
+      "backEnd": [
+        "MySQL",
+        "PHP"
+      ],
+      "deployment": [
+        "Apache (shared hosting)"
+      ]
+    },
+    "images": {
+      "icon": "https://mikedonovan.dev/csskaboom/favicon.ico",
+      "screenshots": {
+        "desktop": [],
+        "mobile": [
+          "css-kaboom_mobile_0.png",
+          "css-kaboom_mobile_1.png"
+        ]
+      }
+    },
+    "liveUrl": "https://mikedonovan.dev/csskaboom",
+    "features": [
+      "No images used (CSS only)",
+      "Another feature",
+      "Yet another feature"
+    ],
+    "challenges": [
+      "Put a challenge here, a challenge here, a challenge here a challenge here a challenge here.",
+      "Put another challenge here a challenge herea challenge here a challenge here, a challenge herea challenge here."
+    ]    
+  },
+  {
+    "id": "next-portfolio",
+    "title": "This Very Website",
+    "description": "The portfolio site you are currently viewing",
+    "tech": {
+      "frontEnd": [
+        "Next.js",
+        "React",
+        "TypeScript"
+      ],
+      "backEnd": [
+        "Next.js"
+      ],
+      "deployment": [
+        "Vercel"
+      ]
+    },
+    "images": {
+      "icon": "https://buggle.live/favicon.ico",
+      "screenshots": {
+        "desktop": [],
+        "mobile": [
+          "css-kaboom_mobile_0.png",
+          "css-kaboom_mobile_1.png"
+        ]
+      }
+    },
+    "liveUrl": "",
+    "features": [
+      "Server-side rendering",
+      "Another feature",
+      "Yet another feature"
+    ],
+    "challenges": [
+      "Put a challenge here, a challenge here, a challenge here a challenge here a challenge here.",
+      "Put another challenge here a challenge herea challenge here a challenge here, a challenge herea challenge here."
+    ]
   }
 ]
