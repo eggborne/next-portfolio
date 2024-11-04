@@ -3,8 +3,8 @@ import styles from "./page.module.css";
 export default function Home() {
   
   return (
-    <main className={styles.home}>      
+    <section className={styles.home}>      
       Home
-    </main>
+    </section>
   );
 }

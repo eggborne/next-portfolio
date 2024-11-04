@@ -1,0 +1,15 @@
+{
+  "description": "Aspiring web developer specializing in React and TypeScript. Passionate about building efficient, user-friendly applications.",
+  "email": "mike@mikedonovan.dev",
+  "location": {
+    "city": "Apache Junction",
+    "state": "Arizona",
+    "country": "USA"
+  },
+  "name": "Mike Donovan",
+  "phone": "+1-360-936-8442",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/the-mike-donovan",
+    "github": "https://github.com/eggborne"
+  }
+}

@@ -1,21 +1,32 @@
 .NavMenu {
-  font-size: 1.25rem;
   position: absolute;
-  top: var(--header-height);
-  right: 0;
+  width: 100%;
+  height: calc(var(--actual-view-height) - var(--header-height));
+  translate: -50% 0;
+  bottom: 0;
+  left: 50%;
   padding: var(--main-padding) calc(var(--main-padding) * 1.5);
   background-color: var(--header-bg-color);
   font-weight: bold;
-  transform: translateY(-100%);
-  transition: transform var(--animation-speed) ease;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation-speed) ease;
+  z-index: 2;
 }
 
 .NavMenu>ul {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
 }
 
 .NavMenu.open {
-  transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
 }

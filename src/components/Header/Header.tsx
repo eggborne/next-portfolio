@@ -14,12 +14,10 @@ export default function Header() {
   }
 
   return (
-    <>
-      <header>
-        <Link href='/'><h1 className='header-legend'>Web projects by Mike Donovan</h1></Link>
-        <Hamburger isOpen={menuOpen} toggleMenu={toggleMenu} />
-      </header>
-      <NavMenu isOpen={menuOpen} />
-    </>
+    <header>
+      <Link href='/'><h1 className='header-legend'>Web projects by Mike Donovan</h1></Link>
+      <Hamburger isOpen={menuOpen} toggleMenu={toggleMenu} />
+      <NavMenu isOpen={menuOpen} closeMenu={toggleMenu} />
+    </header>
   );
 }

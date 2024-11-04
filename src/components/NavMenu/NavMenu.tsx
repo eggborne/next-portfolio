@@ -4,9 +4,10 @@ import classNames from "classnames";
 
 interface NavMenuProps {
   isOpen: boolean;
+  closeMenu: () => void;
 }
 
-export default function NavMenu({ isOpen }: NavMenuProps) {
+export default function NavMenu({ isOpen, closeMenu }: NavMenuProps) {
   const menuClasses = classNames(
     styles.NavMenu,
     {
@@ -15,7 +16,8 @@ export default function NavMenu({ isOpen }: NavMenuProps) {
   );
   return (
     <nav className={menuClasses}>
-      <ul>
+      <ul onClick={closeMenu} >
+        <Link href='/'>About</Link>
         <Link href='projects'>Projects</Link>
         <Link href='contact'>Contact</Link>
       </ul>

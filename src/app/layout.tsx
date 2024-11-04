@@ -32,8 +32,8 @@ export default function RootLayout({
         <Header />
         {children}
         <footer>
-          <Link href='#'>
-            footer
+          <Link href='mailto:mike@mikedonovan.dev'>
+            mike@mikedonovan.dev
           </Link>
         </footer>
       </body>

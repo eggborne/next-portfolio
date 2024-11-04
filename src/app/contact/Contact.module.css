@@ -1,0 +1,26 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.contactInfo h2 {
+  font-weight: 700;
+  color: #1a202c;
+  background: linear-gradient(120deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contactInfo p {
+  color: #aeb9cb;
+  line-height: 1.6;
+}

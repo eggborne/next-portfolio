@@ -8,12 +8,12 @@ export const metadata = {
 export default function Projects() {
 
   return (
-    <main>
+    <section>
       <div className={styles.projectList}>
         {projectsData.map(data =>
           <ProjectCard key={data.id} {...data} />
         )}
       </div>
-    </main>
+    </section>
   );
 }

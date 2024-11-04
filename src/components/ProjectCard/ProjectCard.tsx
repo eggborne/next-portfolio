@@ -28,7 +28,7 @@ export default function ProjectCard({ id, title, description, tech, images, live
       <div className={styles.header}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
-        <a href={`${process.env.NEXT_PUBLIC_REPO_ROOT_URL }/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/${id}`} target='_blank' rel="noopener noreferrer" className={styles.repoLink}>
+        <a href={`${process.env.NEXT_PUBLIC_REPO_ROOT_URL}/${process.env.NEXT_PUBLIC_REPO_USERNAME}/${id}`} target='_blank' rel="noopener noreferrer" className={styles.repoLink}>
           View Repo →
         </a>
         {liveUrl && <a href={liveUrl} target='_blank' rel="noopener noreferrer" className={styles.liveLink}>
