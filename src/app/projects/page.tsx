@@ -1,5 +1,5 @@
 import styles from './Projects.module.css';
-import projectsData from '../../projects.json';
+import projectsData from '@/projects.json';
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
 
 export const metadata = {

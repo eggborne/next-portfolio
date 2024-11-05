@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header>
-      <Link href='/'><h1 className='header-legend'>Web projects by Mike Donovan</h1></Link>
+      <Link className='header-legend' href='/'><h1>Mike Donovan</h1><small>Full-Stack Web Developer</small></Link>
       <Hamburger isOpen={menuOpen} toggleMenu={toggleMenu} />
       <NavMenu isOpen={menuOpen} closeMenu={toggleMenu} />
     </header>

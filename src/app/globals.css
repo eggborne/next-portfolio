@@ -25,6 +25,11 @@
   margin: 0;
 }
 
+html,
+body {
+  overscroll-behavior: none;
+}
+
 body {
   color: var(--main-font-color);
   background: #000000;
@@ -52,7 +57,6 @@ a {
 
 header,
 footer {
-  /* position: absolute; */
   left: 0;
   width: 100%;
   background-color: var(--header-bg-color);
@@ -62,11 +66,9 @@ footer {
   color: var(--header-font-color);
   padding: var(--main-padding);
   padding-right: calc((var(--header-height) - var(--hamburger-size)) / 2);
-  /* z-index: 1; */
 }
 
 header {
-  /* top: 0; */
   height: var(--header-height);
   font-size: calc(var(--header-height) * 0.3);
   justify-content: space-between;
@@ -80,10 +82,19 @@ header>a {
 header>a>h1 {
   font-size: inherit;
   font-weight: inherit;
+  margin: 0;
+}
+
+.header-legend{
+  font-weight: bold;
 }
 
 footer {
-  /* bottom: 0; */
   height: var(--footer-height);
   font-size: 0.8rem;
+}
+
+small {
+  font-weight: normal;
+  opacity: 0.65;
 }

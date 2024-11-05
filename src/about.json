@@ -1,0 +1,17 @@
+{
+  "description": "Aspiring web developer specializing in React and TypeScript. Passionate about building efficient, user-friendly applications.",
+  "firstName": "Mike",
+  "lastName": "Donovan",
+  "skills": [
+    "React",
+    "TypeScript",
+    "Node",
+    "Next.js",
+    "Firebase",
+    "Vite",
+    "Webpack",
+    "NPM",
+    "MySQL",
+    "PHP"
+  ]
+}
