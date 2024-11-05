@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
+import emailjs from '@emailjs/browser';
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,10 +21,31 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Here you would typically send form data to a server or API
-    console.log('Form submitted:', formData);
+    const sendResult = await emailjs.send(
+      'default_service',
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || '' }
+    );
+    console.log('Email sent?', sendResult);
+    if (sendResult.status === 200) {
+      console.log('Email sent successfully!')
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+    } else {
+      console.log('Email failed to send.')
+    }
   };
 
   return (
