@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
-import Hamburger from "@/components/Hamburger/Hamburger.client";
 import Header from "@/components/Header/Header";
 
 const geistSans = localFont({
@@ -33,7 +32,7 @@ export default function RootLayout({
         {children}
         <footer>
           <Link href='mailto:mike@mikedonovan.dev'>
-            mike@mikedonovan.dev
+            made with ❤️ by mike@mikedonovan.dev
           </Link>
         </footer>
       </body>

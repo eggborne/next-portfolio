@@ -3,4 +3,54 @@
   font-family: var(--font-geist-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro {
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.sectionLinks {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.linkCard {
+  background-color: var(--card-bg-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  text-align: center;
+}
+
+.linkCard h2 {
+  margin-top: 0;
+}
+
+.linkCard p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin: 0.5rem 0 1rem;
+}
+
+.linkButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.linkButton:hover {
+  background-color: #005bb5;
 }

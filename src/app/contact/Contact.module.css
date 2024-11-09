@@ -15,17 +15,15 @@
 .contactInfo h2 {
   grid-column-end: span 2;
   font-weight: 700;
-  color: #1a202c;
-  background: linear-gradient(120deg, #2563eb, #7c3aed);
+  background: var(--title-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .contactInfo p {
-  color: #aeb9cb;
   line-height: 1.25;
 }
 
 .contactInfo > * {
-  min-height: 3rem;
+  min-height: 2.5rem;
 }
